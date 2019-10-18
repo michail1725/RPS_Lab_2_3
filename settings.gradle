@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='RPS_Lab_2_3'
