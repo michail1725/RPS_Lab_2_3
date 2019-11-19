@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="151dp" />
 
     <TextView
-        android:id="@+id/SimulationHelloText"
+        android:id="@+id/MatrixEnterHelloText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="278dp"
@@ -76,7 +76,7 @@
         android:layout_marginTop="142dp"
         android:text="Simulate"
         app:layout_constraintStart_toEndOf="@+id/MergeSwitch"
-        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" />
+        app:layout_constraintTop_toBottomOf="@+id/MatrixEnterHelloText" />
 
     <ScrollView
         android:layout_width="237dp"
