@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RPS_Lab_2_3</string>
+    <string name="enter_matrix_size">Enter matrix size:</string>
+    <string name="generation">Generation</string>
+    <string name="generate">Generate</string>
+    <string name="choice_generation_type">Choice generation type:</string>
 </resources>

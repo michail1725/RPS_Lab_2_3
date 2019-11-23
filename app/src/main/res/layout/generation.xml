@@ -13,7 +13,7 @@
         android:layout_marginStart="278dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="278dp"
-        android:text="Generation"
+        android:text="@string/generation"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,15 +27,17 @@
         android:layout_marginTop="180dp"
         android:ems="10"
         android:inputType="number"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" tools:targetApi="o" />
 
     <TextView
         android:id="@+id/EnterMatrixSizeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:text="Enter matrix size:"
+        android:text="@string/enter_matrix_size"
         app:layout_constraintBottom_toTopOf="@+id/MatrixSizeText"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -46,7 +48,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="180dp"
         app:layout_constraintStart_toEndOf="@+id/MatrixSizeText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/GenTypeText"
@@ -54,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
-        android:text="Choice generation type:"
+        android:text="@string/choice_generation_type"
         app:layout_constraintBottom_toTopOf="@+id/GenTypeSpinner"
         app:layout_constraintStart_toEndOf="@+id/MatrixSizeText" />
 
@@ -63,20 +65,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:text="Generate"
+        android:layout_marginTop="170dp"
+        android:text="@string/generate"
         app:layout_constraintStart_toEndOf="@+id/GenTypeSpinner"
-        tools:layout_editor_absoluteY="159dp" />
-
-    <ScrollView
-        android:layout_width="729dp"
-        android:layout_height="162dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="233dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

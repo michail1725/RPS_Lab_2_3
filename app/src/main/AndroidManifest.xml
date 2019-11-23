@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".bubble_sort">
+        </activity>
+        <activity android:name=".merge_sort">
+        </activity>
+        <activity android:name=".quick_sort">
+        </activity>
+        <activity android:name=".simulation">
+        </activity>
+        <activity android:name=".generation">
+        </activity>
     </application>
 
 </manifest>
