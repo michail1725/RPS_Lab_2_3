@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulationActivity">
+
+    <TextView
+        android:id="@+id/ChoiceGenTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/choice_generation_type"
+        app:layout_constraintStart_toStartOf="@+id/GenTypeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" />
+
+    <TextView
+        android:id="@+id/MatrixSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/enter_matrix_size"
+        app:layout_constraintStart_toStartOf="@+id/MatrixSizeSimText"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" />
+
+    <TextView
+        android:id="@+id/SimulationHelloText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/simulation"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/EntTypeSpinner"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" />
+
+    <Spinner
+        android:id="@+id/GenTypeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/MatrixSizeSimText"
+        app:layout_constraintStart_toEndOf="@+id/EntTypeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" />
+
+    <Switch
+        android:id="@+id/BubbleSwitch"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bubble_sort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EntTypeSpinner" />
+
+    <Switch
+        android:id="@+id/QuickSwitch"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/quick_sort"
+        app:layout_constraintEnd_toStartOf="@+id/SimulateButton"
+        app:layout_constraintTop_toBottomOf="@+id/MatrixSizeSimText" />
+
+    <Switch
+        android:id="@+id/MergeSwitch"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/merge_sort"
+        app:layout_constraintEnd_toStartOf="@+id/QuickSwitch"
+        app:layout_constraintStart_toEndOf="@+id/BubbleSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/GenTypeSpinner" />
+
+    <Button
+        android:id="@+id/SimulateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onSimulateButtonClick"
+        android:text="@string/simulate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenTypeSpinner" />
+
+    <TextView
+        android:id="@+id/MatrixText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:maxLines="100"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MergeSwitch" />
+
+    <EditText
+        android:id="@+id/MatrixSizeSimText"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:autofillHints=""
+        android:backgroundTint="#009688"
+        android:descendantFocusability="beforeDescendants"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:textAllCaps="false"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/MatrixSimText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:autofillHints=""
+        android:backgroundTint="#009688"
+        android:descendantFocusability="beforeDescendants"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:textAllCaps="false"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EntTypeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/ChoiceEntTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/choice_array_enter_type"
+        app:layout_constraintStart_toStartOf="@+id/EntTypeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/SimulationHelloText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

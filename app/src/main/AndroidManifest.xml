@@ -12,19 +12,20 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".bubble_sort">
+        <activity android:name=".SimulationActivity">
         </activity>
-        <activity android:name=".merge_sort">
+        <activity android:name=".GenerationActivity">
         </activity>
-        <activity android:name=".quick_sort">
+        <activity android:name=".EnterMatrixActivity">
         </activity>
-        <activity android:name=".simulation">
+        <activity android:name=".BubbleSortActivity">
         </activity>
-        <activity android:name=".generation">
+        <activity android:name=".MergeSortActivity">
+        </activity>
+        <activity android:name=".QuickSortActivity">
         </activity>
     </application>
 

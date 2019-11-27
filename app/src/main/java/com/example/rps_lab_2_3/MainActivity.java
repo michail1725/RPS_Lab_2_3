@@ -1,14 +1,13 @@
 package com.example.rps_lab_2_3;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    int[] array;
+    public static int[] array;
+    public static int   size = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,23 +15,27 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
     public void onGenerationButtonClick (android.view.View view) {
-        Intent intent = new Intent(MainActivity.this, generation.class);
+        Intent intent = new Intent(MainActivity.this, GenerationActivity.class);
         startActivity(intent);
     }
     public void onSimulationButtonClick (android.view.View view) {
-        Intent intent = new Intent(MainActivity.this, simulation.class);
+        Intent intent = new Intent(MainActivity.this, SimulationActivity.class);
         startActivity(intent);
     }
-    public void onBubbleButtonClick (android.view.View view) {
-        Intent intent = new Intent(MainActivity.this, bubble_sort.class);
+    public void onBubbleSortButtonClick (android.view.View view) {
+        Intent intent = new Intent(MainActivity.this, BubbleSortActivity.class);
         startActivity(intent);
     }
-    public void onMergeButtonClick (android.view.View view) {
-        Intent intent = new Intent(MainActivity.this, merge_sort.class);
+    public void onMergeSortButtonClick (android.view.View view) {
+        Intent intent = new Intent(MainActivity.this, MergeSortActivity.class);
         startActivity(intent);
     }
-    public void onQuickButtonClick (android.view.View view) {
-        Intent intent = new Intent(MainActivity.this, quick_sort.class);
+    public void onQuickSortButtonClick (android.view.View view) {
+        Intent intent = new Intent(MainActivity.this, QuickSortActivity.class);
+        startActivity(intent);
+    }
+    public void onEnterMatrixButtonClick (android.view.View view) {
+        Intent intent = new Intent(MainActivity.this, EnterMatrixActivity.class);
         startActivity(intent);
     }
 }

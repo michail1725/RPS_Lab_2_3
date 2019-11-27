@@ -4,4 +4,15 @@
     <string name="generation">Generation</string>
     <string name="generate">Generate</string>
     <string name="choice_generation_type">Choice generation type:</string>
+    <string name="enter_matrix">Enter Matrix</string>
+    <string name="bubble_sort">Bubble Sort</string>
+    <string name="sort">Sort</string>
+    <string name="simulation">Simulation</string>
+    <string name="merge_sort">Merge sort</string>
+    <string name="quick_sort">Quick sort</string>
+    <string name="matrix_sort_app">Matrix Sort App</string>
+    <string name="enter_your_matrix">Enter your matrix:</string>
+    <string name="refresh">Refresh</string>
+    <string name="simulate">simulate</string>
+    <string name="choice_array_enter_type">Choice array enter type:</string>
 </resources>
